@@ -1,0 +1,3 @@
+[submodule "bundle/Hemisu"]
+	path = bundle/Hemisu
+	url = https://github.com/noahfrederick/Hemisu.git
