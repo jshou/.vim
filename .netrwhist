@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/jshou/dev/code/data_update_machine'
-let g:netrw_dirhist_2='/home/jshou/dev/code/data_entry_service'
-let g:netrw_dirhist_3='/home/jshou/music/サウンドトラック'
-let g:netrw_dirhist_4='/home/jshou/dev/code/data_update_machine/bin'
