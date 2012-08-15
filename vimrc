@@ -1,4 +1,29 @@
-call pathogen#infect()
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" my bundles here
+" repos on github
+Bundle 'noahfrederick/Hemisu'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tsaleh/vim-supertab'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-afterimage'
+Bundle 'vim-scripts/VimClojure'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'majutsushi/tagbar'
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+" non github repos
 
 syntax on
 filetype indent on
