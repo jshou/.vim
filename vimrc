@@ -67,8 +67,7 @@ set showmode
 map <F8> :echo synIDattr(synID(line("."),col("."),1),"name")<cr>
 
 " highlight tabs and trailing spaces
-set listchars=tab:>✖,trail:✖
-set list
+set list listchars=tab:\ \ ,trail:·
 
 """ powerline
 set nocompatible " disable vi-compatibility
