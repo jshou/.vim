@@ -55,6 +55,9 @@ autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd FileType ruby,eruby,yaml set sw=2 sts=2
 autocmd FileType coffee set sw=2 sts=2
 
+""" tab completion
+set wildmode=longest,list
+set wildmenu
 
 " hide abandon buffers in order to not lose undo history
 set hid
