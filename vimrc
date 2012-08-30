@@ -1,5 +1,3 @@
-filetype off
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -21,9 +19,9 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
 Bundle 'benmills/vimux'
+Bundle 'kien/ctrlp.vim'
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+" Bundle 'name-of-vim-script-repo'
 " non github repos
 
 syntax on
@@ -39,9 +37,9 @@ set hlsearch
 
 let mapleader = ","
 
-""" fuzzy finder bindings
-map <leader>t :FufFile <CR>
-map <leader>w :FufRenewCache <CR>
+""" ctrl-p bindings
+let g:ctrlp_map = ",t"
+
 map <leader>l :TagbarToggle <CR>
 
 imap <C-a> <Esc>0i
