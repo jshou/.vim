@@ -22,6 +22,7 @@ Bundle 'benmills/vimux'
 Bundle 'kien/ctrlp.vim'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
+Bundle 'bufkill.vim'
 " non github repos
 
 syntax on
@@ -90,10 +91,6 @@ set vb
 
 """ Nerdtre
 map <F2> :NERDTreeToggle<CR>
-
-" deleting buffer without closing the window
-" proper attribution: http://superuser.com/questions/289285/how-to-close-buffer-without-closing-the-window
-map <leader>w :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " coffeetags for TagBar
 if executable('coffeetags')
