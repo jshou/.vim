@@ -20,6 +20,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
 Bundle 'benmills/vimux'
 Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-haml'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
