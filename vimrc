@@ -25,6 +25,7 @@ Bundle 'metalelf0/vimt0d0'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
+Bundle 'LargeFile'
 " non github repos
 
 syntax on
@@ -126,3 +127,5 @@ if has('mouse')
     autocmd BufEnter * set ttymouse=xterm2
   endif
 endif
+
+set nu
