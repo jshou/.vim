@@ -9,7 +9,7 @@ Bundle 'gmarik/vundle'
 " repos on github
 Bundle 'noahfrederick/Hemisu'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bstrie/vim-powerline'
 Bundle 'tsaleh/vim-supertab'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'altercation/vim-colors-solarized'
