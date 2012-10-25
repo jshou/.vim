@@ -96,6 +96,9 @@ set vb
 """ Nerdtre
 map <F2> :NERDTreeToggle<CR>
 
+set splitbelow
+set splitright
+
 " coffeetags for TagBar
 if executable('coffeetags')
   let g:tagbar_type_coffee = {
