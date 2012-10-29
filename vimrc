@@ -26,6 +26,7 @@ Bundle 'metalelf0/vimt0d0'
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
 Bundle 'LargeFile'
+Bundle 'JavaScript-Indent'
 " non github repos
 
 syntax on
