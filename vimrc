@@ -23,6 +23,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'metalelf0/vimt0d0'
 Bundle "pangloss/vim-javascript"
+Bundle 'tpope/vim-endwise'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
