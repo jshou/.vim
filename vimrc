@@ -25,6 +25,7 @@ Bundle 'metalelf0/vimt0d0'
 Bundle "pangloss/vim-javascript"
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
+Bundle 'othree/html5.vim'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
