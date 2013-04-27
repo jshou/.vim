@@ -36,10 +36,10 @@ syntax on
 filetype indent on
 set fileencodings=utf8 ",latin1
 set encoding=utf8
-set tabstop=4
+set tabstop=2
 set autoindent
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set ruler
 set hlsearch
 
