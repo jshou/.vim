@@ -78,6 +78,7 @@ set showmode
 
 " map f8 to show the syntax coloring for a character
 map <F8> :echo synIDattr(synID(line("."),col("."),1),"name")<cr>
+nnoremap <leader>g :GundoToggle<CR>
 
 " highlight tabs and trailing spaces
 set list listchars=tab:\ \ ,trail:·
