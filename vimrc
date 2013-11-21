@@ -27,6 +27,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
 Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'mustache/vim-mode'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
