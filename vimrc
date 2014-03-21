@@ -28,10 +28,12 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'mustache/vim-mode'
+Bundle 'tfnico/vim-gradle'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
 Bundle 'LargeFile'
+Bundle 'groovy.vim'
 " non github repos
 
 syntax on
