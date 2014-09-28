@@ -62,10 +62,12 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.prawn set filetype=ruby
 autocmd BufNewFile,BufRead *.god set filetype=ruby
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
-autocmd FileType ruby,eruby,yaml set sw=2 sts=2
-autocmd FileType coffee set sw=2 sts=2
-autocmd FileType javascript set sw=2 sts=2
-autocmd FileType css,html set sw=2 sts=2
+autocmd FileType ruby,eruby,yaml set sw=2 sts=2 expandtab
+autocmd FileType coffee set sw=2 sts=2 expandtab
+autocmd FileType javascript set sw=2 sts=2 expandtab
+autocmd FileType css,html,sass,haml set sw=2 sts=2 expandtab
+autocmd FileType python set sw=4 sts=4 expandtab
+autocmd Filetype cs set expandtab
 
 """ tab completion
 set wildmode=longest,list
@@ -92,7 +94,7 @@ set laststatus=2 " always show the statusline
 set t_Co=256 " 256 colors
 
 " highlight anything longer than 120 chars
-match ErrorMsg '\%>120v.\+'
+" match ErrorMsg '\%>120v.\+'
 
 " colors
 set bg=dark
