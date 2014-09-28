@@ -25,6 +25,7 @@ Bundle 'metalelf0/vimt0d0'
 Bundle "pangloss/vim-javascript"
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
+Bundle 'tpope/vim-rsi'
 Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'mustache/vim-mode'
