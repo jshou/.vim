@@ -29,11 +29,15 @@ Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'mustache/vim-mode'
 Bundle 'tfnico/vim-gradle'
+Bundle 'johnhamelink/blade.vim'
+Bundle 'digitaltoad/vim-jade'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
 Bundle 'LargeFile'
 Bundle 'groovy.vim'
+Bundle 'cascadia.vim'
+Bundle 'beauty256'
 " non github repos
 
 syntax on
@@ -68,6 +72,7 @@ autocmd FileType javascript set sw=2 sts=2 expandtab
 autocmd FileType css,html,sass,haml set sw=2 sts=2 expandtab
 autocmd FileType python set sw=4 sts=4 expandtab
 autocmd Filetype cs set expandtab
+autocmd Filetype php set noexpandtab
 
 """ tab completion
 set wildmode=longest,list
@@ -98,7 +103,7 @@ set t_Co=256 " 256 colors
 
 " colors
 set bg=dark
-colors hemisu
+colors beauty256
 
 set backspace=indent,eol,start
 
@@ -144,3 +149,7 @@ if has('mouse')
 endif
 
 set nu
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](vendor|node_modules)$'
+  \ }
