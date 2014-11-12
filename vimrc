@@ -152,6 +152,6 @@ endif
 set nu
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](vendor|node_modules)$'
-}
+  \ 'dir': '\v[\/](vendor|node_modules)$',
+  \ }
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
