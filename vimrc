@@ -70,6 +70,7 @@ autocmd FileType ruby,eruby,yaml set sw=2 sts=2 expandtab
 autocmd FileType coffee set sw=2 sts=2 expandtab
 autocmd FileType javascript set sw=2 sts=2 expandtab
 autocmd FileType css,html,sass,haml set sw=2 sts=2 expandtab
+autocmd FileType php set sw=2 sts=2 noexpandtab
 autocmd FileType python set sw=4 sts=4 expandtab
 autocmd Filetype cs set expandtab
 autocmd Filetype php set noexpandtab
@@ -152,4 +153,5 @@ set nu
 
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](vendor|node_modules)$'
-  \ }
+}
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
