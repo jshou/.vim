@@ -37,7 +37,6 @@ Bundle 'bufkill.vim'
 Bundle 'LargeFile'
 Bundle 'groovy.vim'
 Bundle 'cascadia.vim'
-Bundle 'beauty256'
 " non github repos
 
 syntax on
@@ -104,7 +103,7 @@ set t_Co=256 " 256 colors
 
 " colors
 set bg=dark
-colors beauty256
+colors hemisu
 
 set backspace=indent,eol,start
 
