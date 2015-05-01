@@ -37,6 +37,7 @@ Bundle 'bufkill.vim'
 Bundle 'LargeFile'
 Bundle 'groovy.vim'
 Bundle 'cascadia.vim'
+Bundle 'paredit.vim'
 " non github repos
 
 syntax on
