@@ -9,35 +9,23 @@ Bundle 'gmarik/vundle'
 " repos on github
 Bundle 'noahfrederick/Hemisu'
 Bundle 'tpope/vim-fugitive'
-Bundle 'bstrie/vim-powerline'
+Bundle 'powerline/powerline'
 Bundle 'tsaleh/vim-supertab'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-afterimage'
 Bundle 'vim-scripts/VimClojure'
-Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'majutsushi/tagbar'
-Bundle 'benmills/vimux'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-haml'
-Bundle 'metalelf0/vimt0d0'
 Bundle "pangloss/vim-javascript"
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
 Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
-Bundle 'mustache/vim-mode'
-Bundle 'tfnico/vim-gradle'
-Bundle 'johnhamelink/blade.vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'Lokaltog/vim-distinguished'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
 Bundle 'LargeFile'
-Bundle 'groovy.vim'
-Bundle 'cascadia.vim'
 Bundle 'paredit.vim'
 
 syntax on
@@ -55,8 +43,6 @@ let mapleader = ","
 
 """ ctrl-p bindings
 let g:ctrlp_map = ",t"
-
-map <leader>l :TagbarToggle <CR>
 
 imap <C-a> <Esc>0i
 imap <C-e> <Esc>$a
