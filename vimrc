@@ -31,6 +31,7 @@ Bundle 'mustache/vim-mode'
 Bundle 'tfnico/vim-gradle'
 Bundle 'johnhamelink/blade.vim'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'Lokaltog/vim-distinguished'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
@@ -38,7 +39,6 @@ Bundle 'LargeFile'
 Bundle 'groovy.vim'
 Bundle 'cascadia.vim'
 Bundle 'paredit.vim'
-" non github repos
 
 syntax on
 filetype indent on
@@ -104,7 +104,7 @@ set t_Co=256 " 256 colors
 
 " colors
 set bg=dark
-colors hemisu
+colors distinguished
 
 set backspace=indent,eol,start
 
