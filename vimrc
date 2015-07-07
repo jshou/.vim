@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 " my bundles here
 " repos on github
 Bundle 'noahfrederick/Hemisu'
+Plugin 'chriskempson/base16-vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'powerline/powerline'
 Bundle 'tsaleh/vim-supertab'
@@ -21,7 +22,6 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'Lokaltog/vim-distinguished'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
@@ -90,7 +90,8 @@ set t_Co=256 " 256 colors
 
 " colors
 set bg=dark
-colors distinguished
+let base16colorspace=256
+colors base16-grayscale
 
 set backspace=indent,eol,start
 
@@ -138,6 +139,6 @@ endif
 set nu
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](vendor|node_modules)$',
+  \ 'dir': '\v[\/](vendor|node_modules|venv)$',
   \ }
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
+set wildignore+=*/tmp/*,*.pyc,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
