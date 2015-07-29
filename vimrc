@@ -14,7 +14,7 @@ Bundle 'powerline/powerline'
 Bundle 'tsaleh/vim-supertab'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tpope/vim-haml'
 Bundle "pangloss/vim-javascript"
 Bundle 'tpope/vim-endwise'
