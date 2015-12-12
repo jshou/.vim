@@ -8,7 +8,7 @@ Bundle 'gmarik/vundle'
 " my bundles here
 " repos on github
 Bundle 'noahfrederick/Hemisu'
-Plugin 'chriskempson/base16-vim'
+Bundle 'chriskempson/base16-vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'powerline/powerline'
 Bundle 'tsaleh/vim-supertab'
@@ -139,6 +139,6 @@ endif
 set nu
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](vendor|node_modules|venv)$',
+  \ 'dir': '\v[\/](build|vendor|node_modules|venv)$',
   \ }
 set wildignore+=*/tmp/*,*.pyc,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
