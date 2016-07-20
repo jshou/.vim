@@ -107,3 +107,6 @@ let g:ctrlp_custom_ignore = {
 set wildignore+=*/tmp/*,*.pyc,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
 
 set colorcolumn=120
+
+" set lower timeout so that shift-O doesn't take as long
+set timeout timeoutlen=5000 ttimeoutlen=100
