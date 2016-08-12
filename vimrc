@@ -72,9 +72,10 @@ set t_Co=256 " 256 colors
 
 
 " colors
-set bg=dark
-let base16colorspace=256
-colors base16-railscasts
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 set backspace=indent,eol,start
 
