@@ -18,6 +18,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
 Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'derekwyatt/vim-scala'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
@@ -43,6 +44,7 @@ let g:ctrlp_map = ",t"
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.prawn set filetype=ruby
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead *.scala set filetype=scala
 autocmd FileType ruby,eruby,yaml set sw=2 sts=2 expandtab
 autocmd FileType javascript set sw=2 sts=2 expandtab
 autocmd FileType css,html,sass,haml set sw=2 sts=2 expandtab
