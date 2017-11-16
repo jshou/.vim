@@ -19,6 +19,8 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'benmills/vimux'
+Bundle 'pgr0ss/vimux-ruby-test'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
@@ -50,7 +52,6 @@ autocmd FileType javascript set sw=2 sts=2 expandtab
 autocmd FileType css,html,sass,haml set sw=2 sts=2 expandtab
 autocmd FileType php set sw=2 sts=2 noexpandtab
 autocmd FileType python set sw=4 sts=4 expandtab
-
 
 " hide abandon buffers in order to not lose undo history
 set hid
@@ -108,7 +109,23 @@ let g:ctrlp_custom_ignore = {
   \ }
 set wildignore+=*/tmp/*,*.pyc,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
 
-set colorcolumn=120
-
 " set lower timeout so that shift-O doesn't take as long
 set timeout timeoutlen=5000 ttimeoutlen=100
+
+" vimux 
+let g:VimuxHeight = "30"
+let g:VimuxOrientation = "h"
+let g:vimux_ruby_cmd_all_tests = 'bundle exec rake test'
+autocmd FileType ruby map <leader>vs :RunRubyFocusedTest<CR>
+autocmd FileType ruby map <leader>vf :RunAllRubyTests<CR>
+autocmd FileType ruby map <leader>va :call VimuxRunCommand("bundle exec rspec\n")<CR>
+map <leader>vl :VimuxRunLastCommand<CR>
+map <leader>vc :VimuxPromptCommand<CR>
+map <leader>vq :VimuxCloseRunner<CR>
+
+" vs: run this test
+" vf: run all tests in file
+" va: run all tests ever
+" vl: vimux run last command
+" vc: vimux prompt command
+" vq: vimux close window
