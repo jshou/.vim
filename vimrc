@@ -108,13 +108,13 @@ set wildignore+=*/tmp/*,*.pyc,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
 " set lower timeout so that shift-O doesn't take as long
 set timeout timeoutlen=5000 ttimeoutlen=100
 
-" vimux 
+" vimux
 let g:VimuxHeight = "30"
 let g:VimuxOrientation = "h"
 let g:vimux_ruby_cmd_all_tests = 'bundle exec rake test'
 autocmd FileType ruby map <leader>vs :RunRubyFocusedTest<CR>
 autocmd FileType ruby map <leader>vf :RunAllRubyTests<CR>
-autocmd FileType ruby map <leader>va :call VimuxRunCommand("bundle exec rspec\n")<CR>
+map <leader>va :call VimuxRunCommand("bundle exec rspec\n")<CR>
 map <leader>vl :VimuxRunLastCommand<CR>
 map <leader>vc :VimuxPromptCommand<CR>
 map <leader>vq :VimuxCloseRunner<CR>
