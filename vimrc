@@ -19,6 +19,7 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'benmills/vimux'
 Bundle 'pgr0ss/vimux-ruby-test'
 " vim-scripts repos
@@ -61,10 +62,6 @@ nnoremap <F3> :set invpaste paste?<CR>
 set pastetoggle=<F3>
 set showmode
 
-" map f8 to show the syntax coloring for a character
-map <F8> :echo synIDattr(synID(line("."),col("."),1),"name")<cr>
-nnoremap <leader>g :GundoToggle<CR>
-
 " highlight tabs and trailing spaces
 set list listchars=tab:\ \ ,trail:·
 
@@ -72,7 +69,6 @@ set list listchars=tab:\ \ ,trail:·
 set nocompatible " disable vi-compatibility
 set laststatus=2 " always show the statusline
 set t_Co=256 " 256 colors
-
 
 " colors
 if filereadable(expand("~/.vimrc_background"))
