@@ -7,19 +7,14 @@ Bundle 'gmarik/vundle'
 
 " my bundles here
 " repos on github
-Bundle 'noahfrederick/Hemisu'
 Bundle 'chriskempson/base16-vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'powerline/powerline'
 Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'tpope/vim-haml'
-Bundle "pangloss/vim-javascript"
+Bundle 'sheerun/vim-polyglot'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
-Bundle 'othree/html5.vim'
 Bundle 'sjl/gundo.vim'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'benmills/vimux'
 Bundle 'pgr0ss/vimux-ruby-test'
 " vim-scripts repos
