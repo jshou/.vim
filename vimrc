@@ -99,13 +99,14 @@ let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](build|vendor|node_modules|venv|build|htmlcov|dist)$',
   \ }
 set wildignore+=*/tmp/*,*.pyc,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
+set wildmenu
 
 " set lower timeout so that shift-O doesn't take as long
 set timeout timeoutlen=5000 ttimeoutlen=100
 
 " vimux
-let g:VimuxHeight = "30"
-let g:VimuxOrientation = "h"
+let g:VimuxHeight = "40"
+let g:VimuxOrientation = "v"
 let g:vimux_ruby_cmd_all_tests = 'bundle exec rake test'
 autocmd FileType ruby map <leader>vs :RunRubyFocusedTest<CR>
 autocmd FileType ruby map <leader>vf :RunAllRubyTests<CR>
@@ -113,6 +114,7 @@ map <leader>va :call VimuxRunCommand("bundle exec rspec\n")<CR>
 map <leader>vl :VimuxRunLastCommand<CR>
 map <leader>vc :VimuxPromptCommand<CR>
 map <leader>vq :VimuxCloseRunner<CR>
+map <leader>vr :call VimuxRunCommand("bundle exec rubocop\n")<CR>
 
 " vs: run this test
 " vf: run all tests in file
@@ -120,3 +122,4 @@ map <leader>vq :VimuxCloseRunner<CR>
 " vl: vimux run last command
 " vc: vimux prompt command
 " vq: vimux close window
+" vr: vimux run rubocop
