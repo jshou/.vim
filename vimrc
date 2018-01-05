@@ -16,7 +16,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
 Bundle 'sjl/gundo.vim'
 Bundle 'benmills/vimux'
-Bundle 'pgr0ss/vimux-ruby-test'
+Bundle 'janko-m/vim-test'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
@@ -108,13 +108,14 @@ set timeout timeoutlen=5000 ttimeoutlen=100
 let g:VimuxHeight = "40"
 let g:VimuxOrientation = "v"
 let g:vimux_ruby_cmd_all_tests = 'bundle exec rake test'
-autocmd FileType ruby map <leader>vs :RunRubyFocusedTest<CR>
-autocmd FileType ruby map <leader>vf :RunAllRubyTests<CR>
-map <leader>va :call VimuxRunCommand("bundle exec rspec\n")<CR>
 map <leader>vl :VimuxRunLastCommand<CR>
 map <leader>vc :VimuxPromptCommand<CR>
 map <leader>vq :VimuxCloseRunner<CR>
 map <leader>vr :call VimuxRunCommand("bundle exec rubocop\n")<CR>
+map <leader>va :TestSuite<CR>
+map <Leader>vf :TestFile<CR>
+map <Leader>vs :TestNearest<CR>
+let test#strategy = 'vimux'
 
 " vs: run this test
 " vf: run all tests in file
