@@ -48,6 +48,7 @@ autocmd FileType javascript set sw=2 sts=2 expandtab
 autocmd FileType css,html,sass,haml set sw=2 sts=2 expandtab
 autocmd FileType php set sw=2 sts=2 noexpandtab
 autocmd FileType python set sw=4 sts=4 expandtab
+autocmd FileType git set keywordprg=git\ show
 
 " hide abandon buffers in order to not lose undo history
 set hid
