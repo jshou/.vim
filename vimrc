@@ -88,9 +88,18 @@ if has('mouse')
     " makes tmux enter copy mode instead of selecting or scrolling
     " inside Vim -- but luckily, setting it up from within autocmds
     " works
-    autocmd VimEnter * set ttymouse=xterm2
-    autocmd FocusGained * set ttymouse=xterm2
-    autocmd BufEnter * set ttymouse=xterm2
+  endif
+
+  if has('mouse_sgr')
+      set ttymouse=sgr
+      autocmd VimEnter * set ttymouse=sgr
+      autocmd FocusGained * set ttymouse=sgr
+      autocmd BufEnter * set ttymouse=sgr
+  else
+      set ttymouse=xterm2
+      autocmd VimEnter * set ttymouse=xterm2
+      autocmd FocusGained * set ttymouse=xterm2
+      autocmd BufEnter * set ttymouse=xterm2
   endif
 endif
 
