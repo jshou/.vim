@@ -71,6 +71,8 @@ if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
 endif
+hi Normal ctermbg=none
+hi NonText ctermbg=none
 
 set backspace=indent,eol,start
 
