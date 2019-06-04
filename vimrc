@@ -33,6 +33,7 @@ set expandtab
 set shiftwidth=2
 set ruler
 set hlsearch
+set nomodeline
 
 let mapleader = ","
 
