@@ -7,7 +7,7 @@ Bundle 'gmarik/vundle'
 
 " my bundles here
 " repos on github
-Bundle 'chriskempson/base16-vim'
+Bundle 'sainnhe/vim-color-atlantis'
 Bundle 'tpope/vim-fugitive'
 Bundle 'powerline/powerline'
 Bundle 'ctrlpvim/ctrlp.vim'
@@ -69,12 +69,10 @@ set laststatus=2 " always show the statusline
 set t_Co=256 " 256 colors
 
 " colors
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
 hi Normal ctermbg=none
 hi NonText ctermbg=none
+set termguicolors
+colorscheme atlantis
 
 set backspace=indent,eol,start
 
