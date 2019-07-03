@@ -17,7 +17,7 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'sjl/gundo.vim'
 Bundle 'benmills/vimux'
 Bundle 'janko-m/vim-test'
-Bundle 'ruanyl/vim-fixmyjs'
+Bundle 'prettier/vim-prettier'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
@@ -137,4 +137,4 @@ let test#strategy = 'vimux'
 " vq: vimux close window
 " vr: vimux run rubocop
 
-noremap <Leader>f :Fixmyjs<CR>
+noremap <Leader>f :Prettier<CR>
