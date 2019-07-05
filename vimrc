@@ -18,6 +18,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'benmills/vimux'
 Bundle 'janko-m/vim-test'
 Bundle 'prettier/vim-prettier'
+Bundle 'JulesWang/css.vim'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
