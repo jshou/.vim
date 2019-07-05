@@ -109,7 +109,7 @@ endif
 set nu
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](build|vendor|node_modules|venv|build|htmlcov|dist)$',
+  \ 'dir': '\v[\/](build|vendor|node_modules|venv|build|htmlcov|dist|public)$',
   \ }
 set wildignore+=*/tmp/*,*.pyc,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
 set wildmenu
