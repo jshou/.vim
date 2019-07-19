@@ -67,7 +67,7 @@ set list listchars=tab:\ \ ,trail:·
 """ powerline
 set nocompatible " disable vi-compatibility
 set laststatus=2 " always show the statusline
-set t_Co=256 " 256 colors
+" set t_Co=256 " 256 colors
 
 " colors
 hi Normal ctermbg=none
