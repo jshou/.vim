@@ -7,7 +7,7 @@ Bundle 'gmarik/vundle'
 
 " my bundles here
 " repos on github
-Bundle 'sainnhe/vim-color-atlantis'
+Bundle 'danilo-augusto/vim-afterglow'
 Bundle 'tpope/vim-fugitive'
 Bundle 'powerline/powerline'
 Bundle 'ctrlpvim/ctrlp.vim'
@@ -73,7 +73,7 @@ set laststatus=2 " always show the statusline
 hi Normal ctermbg=none
 hi NonText ctermbg=none
 set termguicolors
-colorscheme atlantis
+colors afterglow
 
 set backspace=indent,eol,start
 
