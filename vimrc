@@ -17,7 +17,7 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'sjl/gundo.vim'
 Bundle 'benmills/vimux'
 Bundle 'janko-m/vim-test'
-Bundle 'prettier/vim-prettier'
+Plugin 'dense-analysis/ale'
 Bundle 'JulesWang/css.vim'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
@@ -52,7 +52,6 @@ autocmd FileType css,html,sass,haml set sw=2 sts=2 expandtab
 autocmd FileType php set sw=2 sts=2 noexpandtab
 autocmd FileType python set sw=4 sts=4 expandtab
 autocmd FileType git set keywordprg=git\ show
-autocmd BufWritePre *.{js,jsx} :Prettier<CR>
 
 " hide abandon buffers in order to not lose undo history
 set hid
@@ -139,4 +138,6 @@ let test#strategy = 'vimux'
 " vq: vimux close window
 " vr: vimux run rubocop
 
-noremap <Leader>f :Prettier<CR>
+let g:ale_fixers = {'javascript': ['eslint', 'prettier'], 'jsx': ['eslint', 'prettier'], 'javascriptreact': ['eslint', 'prettier']}
+let g:ale_fix_on_save = 1
+noremap <Leader>f :ALEFix<CR>
