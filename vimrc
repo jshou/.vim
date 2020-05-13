@@ -19,6 +19,7 @@ Bundle 'benmills/vimux'
 Bundle 'janko-m/vim-test'
 Plugin 'dense-analysis/ale'
 Bundle 'JulesWang/css.vim'
+Plugin 'preservim/nerdtree'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
@@ -138,6 +139,12 @@ let test#strategy = 'vimux'
 " vq: vimux close window
 " vr: vimux run rubocop
 
+" nerdtree
+map <silent> <leader>nt :NERDTreeToggle<CR>
+map <silent> <leader>nr :NERDTree<CR>
+map <silent> <leader>nf :NERDTreeFind<CR>
+
 let g:ale_fixers = {'javascript': ['eslint', 'prettier'], 'jsx': ['eslint', 'prettier'], 'javascriptreact': ['eslint', 'prettier']}
 let g:ale_fix_on_save = 1
 noremap <Leader>f :ALEFix<CR>
+" set fdm=indent
