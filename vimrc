@@ -146,7 +146,7 @@ map <silent> <leader>nf :NERDTreeFind<CR>
 
 let g:ale_linters = { 'javascript': ['eslint', 'prettier'], 'ruby': ['rubocop'] }
 let g:ale_linters_explicit = 1
-let g:ale_fixers = {'javascript': ['eslint', 'prettier'], 'jsx': ['eslint', 'prettier'], 'javascriptreact': ['eslint', 'prettier']}
+let g:ale_fixers = {'javascript': ['eslint', 'prettier'], 'jsx': ['eslint', 'prettier'], 'javascriptreact': ['eslint', 'prettier'], 'ruby': ['rubocop']}
 let g:ale_fix_on_save = 1
 noremap <Leader>f :ALEFix<CR>
 set fdm=syntax
