@@ -20,6 +20,7 @@ Bundle 'janko-m/vim-test'
 Plugin 'dense-analysis/ale'
 Bundle 'JulesWang/css.vim'
 Plugin 'preservim/nerdtree'
+Bundle 'leafgarland/typescript-vim'
 " vim-scripts repos
 " Bundle 'name-of-vim-script-repo'
 Bundle 'bufkill.vim'
@@ -144,9 +145,22 @@ map <silent> <leader>nt :NERDTreeToggle<CR>
 map <silent> <leader>nr :NERDTree<CR>
 map <silent> <leader>nf :NERDTreeFind<CR>
 
-let g:ale_linters = { 'javascript': ['eslint', 'prettier'], 'ruby': ['rubocop'] }
+let g:ale_linters = {
+      \ 'javascript': ['eslint', 'prettier'],
+      \ 'typescript': ['prettier'],
+      \ 'ruby': ['rubocop']
+      \ }
 let g:ale_linters_explicit = 1
-let g:ale_fixers = {'javascript': ['eslint', 'prettier'], 'jsx': ['eslint', 'prettier'], 'javascriptreact': ['eslint', 'prettier'], 'ruby': ['rubocop']}
+let js_fixers =['eslint', 'prettier']
+let g:ale_fixers = {
+      \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \ 'javascript': js_fixers,
+      \ 'jsx': js_fixers,
+      \ 'javascriptreact': js_fixers,
+      \ 'typescript': js_fixers,
+      \ 'typescriptreact': js_fixers,
+      \ 'ruby': ['rubocop']
+      \ }
 let g:ale_fix_on_save = 1
 noremap <Leader>f :ALEFix<CR>
 set fdm=syntax
