@@ -22,7 +22,10 @@ Plug 'JulesWang/css.vim'
 Plug 'preservim/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'qpkorr/vim-bufkill'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+source ~/.vim/coc.vim
 
 syntax on
 filetype indent on
