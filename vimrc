@@ -9,7 +9,7 @@ call plug#begin()
 " repos on github
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'tpope/vim-fugitive'
-Plug 'powerline/powerline'
+Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-endwise'
@@ -20,7 +20,6 @@ Plug 'janko-m/vim-test'
 Plug 'dense-analysis/ale'
 Plug 'JulesWang/css.vim'
 Plug 'preservim/nerdtree'
-Plug 'leafgarland/typescript-vim'
 Plug 'qpkorr/vim-bufkill'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
