@@ -1,7 +1,7 @@
 #!/bin/bash
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
-
-vim +BundleInstall +qall

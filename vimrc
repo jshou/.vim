@@ -1,30 +1,28 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
+call plug#begin()
 " my bundles here
 " repos on github
-Bundle 'danilo-augusto/vim-afterglow'
-Bundle 'tpope/vim-fugitive'
-Bundle 'powerline/powerline'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'sheerun/vim-polyglot'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-eunuch'
-Bundle 'sjl/gundo.vim'
-Bundle 'benmills/vimux'
-Bundle 'janko-m/vim-test'
-Plugin 'dense-analysis/ale'
-Bundle 'JulesWang/css.vim'
-Plugin 'preservim/nerdtree'
-Bundle 'leafgarland/typescript-vim'
-" vim-scripts repos
-" Bundle 'name-of-vim-script-repo'
-Bundle 'bufkill.vim'
-Bundle 'LargeFile'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'tpope/vim-fugitive'
+Plug 'powerline/powerline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'sjl/gundo.vim'
+Plug 'benmills/vimux'
+Plug 'janko-m/vim-test'
+Plug 'dense-analysis/ale'
+Plug 'JulesWang/css.vim'
+Plug 'preservim/nerdtree'
+Plug 'leafgarland/typescript-vim'
+Plug 'qpkorr/vim-bufkill'
+call plug#end()
 
 syntax on
 filetype indent on
