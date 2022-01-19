@@ -24,6 +24,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+let mapleader = ","
 source ~/.vim/coc.vim
 
 syntax on
@@ -37,8 +38,6 @@ set shiftwidth=2
 set ruler
 set hlsearch
 set nomodeline
-
-let mapleader = ","
 
 """ ctrl-p bindings
 let g:ctrlp_map = ",t"
