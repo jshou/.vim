@@ -7,7 +7,7 @@ endif
 call plug#begin()
 " my bundles here
 " repos on github
-Plug 'danilo-augusto/vim-afterglow'
+Plug 'jacoborus/tender.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -65,16 +65,11 @@ set showmode
 " highlight tabs and trailing spaces
 set list listchars=tab:\ \ ,trail:·
 
-""" powerline
-set nocompatible " disable vi-compatibility
-set laststatus=2 " always show the statusline
-" set t_Co=256 " 256 colors
-
 " colors
 hi Normal ctermbg=none
 hi NonText ctermbg=none
 set termguicolors
-colors afterglow
+colors tender
 
 set backspace=indent,eol,start
 
