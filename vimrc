@@ -145,3 +145,7 @@ let g:ale_fix_on_save = 1
 noremap <Leader>f :ALEFix<CR>
 set fdm=syntax
 set foldmethod=syntax foldlevel=99
+
+" workaround for bug where cursor disappears when running :CocList
+" https://github.com/neoclide/coc.nvim/issues/1775
+let g:coc_disable_transparent_cursor = 1
