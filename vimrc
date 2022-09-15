@@ -70,6 +70,7 @@ hi Normal ctermbg=none
 hi NonText ctermbg=none
 set termguicolors
 colors tender
+hi PmenuSel guibg=SpringGreen4
 
 set backspace=indent,eol,start
 
