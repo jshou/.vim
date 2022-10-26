@@ -8,6 +8,7 @@ call plug#begin()
 " my bundles here
 " repos on github
 Plug 'jacoborus/tender.vim'
+Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -41,6 +42,7 @@ set nomodeline
 
 """ ctrl-p bindings
 let g:ctrlp_map = ",t"
+let g:ctrlp_max_files=0
 
 """ filetype, syntax/color settings
 autocmd BufNewFile,BufRead *.md set filetype=markdown
@@ -69,8 +71,8 @@ set list listchars=tab:\ \ ,trail:·
 hi Normal ctermbg=none
 hi NonText ctermbg=none
 set termguicolors
-colors tender
-hi PmenuSel guibg=SpringGreen4
+colors codedark
+highlight LineNr ctermfg=grey guifg=firebrick
 
 set backspace=indent,eol,start
 
