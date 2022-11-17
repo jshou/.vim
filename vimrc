@@ -11,7 +11,8 @@ Plug 'jacoborus/tender.vim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
@@ -40,9 +41,8 @@ set ruler
 set hlsearch
 set nomodeline
 
-""" ctrl-p bindings
-let g:ctrlp_map = ",t"
-let g:ctrlp_max_files=0
+""" fzf bindings
+nmap <leader>t :GFiles<CR>
 
 """ filetype, syntax/color settings
 autocmd BufNewFile,BufRead *.md set filetype=markdown
@@ -87,12 +87,6 @@ if has('mouse')
 endif
 
 set nu
-
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](build|vendor|node_modules|venv|build|htmlcov|dist|public)$',
-  \ }
-set wildignore+=*/tmp/*,*.pyc,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
-set wildmenu
 
 " set lower timeout so that shift-O doesn't take as long
 set timeout timeoutlen=5000 ttimeoutlen=100
