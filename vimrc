@@ -42,7 +42,8 @@ set hlsearch
 set nomodeline
 
 """ fzf bindings
-nmap <leader>t :GFiles<CR>
+nmap <leader>g :GFiles<CR>
+nmap <leader>t :Files<CR>
 
 """ filetype, syntax/color settings
 autocmd BufNewFile,BufRead *.md set filetype=markdown
