@@ -24,6 +24,9 @@ Plug 'JulesWang/css.vim'
 Plug 'preservim/nerdtree'
 Plug 'qpkorr/vim-bufkill'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'hashivim/vim-terraform'
+Plug 'varnishcache-friends/vim-varnish'
+Plug 'skanehira/getpr.vim'
 call plug#end()
 
 let mapleader = ","
