@@ -51,8 +51,9 @@ nmap <leader>t :Files<CR>
 """ filetype, syntax/color settings
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.prawn set filetype=ruby
-autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Gemfile* set filetype=ruby
 autocmd BufNewFile,BufRead *.scala set filetype=scala
+autocmd BufNewFile,BufRead *.vcl.tpl set filetype=vcl
 autocmd FileType ruby,eruby,yaml set sw=2 sts=2 expandtab
 autocmd FileType javascript set sw=2 sts=2 expandtab
 autocmd FileType css,html,sass,haml set sw=2 sts=2 expandtab
@@ -123,18 +124,20 @@ map <silent> <leader>nf :NERDTreeFind<CR>
 
 let g:ale_linters = {
       \ 'javascript': ['eslint', 'prettier'],
-      \ 'typescript': ['prettier'],
+      \ 'typescript': ['eslint', 'prettier'],
       \ 'ruby': ['rubocop']
       \ }
 let g:ale_linters_explicit = 1
 let js_fixers =['eslint', 'prettier']
 let g:ale_fixers = {
       \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \ 'go': ['gofmt', 'goimports'],
       \ 'javascript': js_fixers,
       \ 'jsx': js_fixers,
       \ 'javascriptreact': js_fixers,
       \ 'typescript': js_fixers,
       \ 'typescriptreact': js_fixers,
+      \ 'terraform': ['terraform'],
       \ 'ruby': ['rubocop']
       \ }
 let g:ale_fix_on_save = 1
