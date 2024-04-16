@@ -148,3 +148,8 @@ set foldmethod=syntax foldlevel=99
 " workaround for bug where cursor disappears when running :CocList
 " https://github.com/neoclide/coc.nvim/issues/1775
 let g:coc_disable_transparent_cursor = 1
+
+map ]q :cnext<CR>
+map [q :cprev<CR>
+
+map <Leader>qr :GetprOpen<CR>
